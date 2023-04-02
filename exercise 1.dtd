@@ -1,0 +1,34 @@
+<!ELEMENT employees  ( employees*) >
+<!ELEMENT employees ( firstname+ familyname, division+) >
+<!ATTLIST employees id ID #REQUIRED
+           currManger IDER  #IMPLIED>
+<!ELEMENT firstname (#PCDATA)> 
+<!ELEMENT familyname(#PCDATA)>
+<!ELEMENT division EMPTY>
+<!ATTLIST division divName (HR | Sales | Marketing) "Sales"
+      startdata CDATA #REQUIRED>
+
+      
+
+
+      <?xml version="1.0"?>
+      <timetable> 
+      <mod code="0 1 2 3 2"
+      <title> Introduction to XML </title> 
+      <lect> Dr A B O'Connor </lect> 
+      <slot><day>Mon </day><time>9</time><length></slot>
+      </mod>
+      <mod code="0 1 4 3 8 ">
+      <title> Java Workshop </title>
+      <lect>Dr  X Wong </lect>
+      <slot><day>Mon</day><time>10</time><length>2</length></slot>
+      <slot><day>Wed</day><time>10</time><length>1</lenght></slot>
+      </mod>
+      <mod code="1 1 3 4 5 ">
+      <title>Analysis &amp; Design </title>
+      <lect> Prof.K Gupta </lect>
+      <slot><day>Tue</day><time>9</time><length>1</lenght></slot>
+      <slot><day>Thu</day><time>16</time><lenght>1</lenght></slot>
+      <slot><day>Fri</day><time>13</time><length>1<lenght></slot>
+      </mod>
+      </timetable>

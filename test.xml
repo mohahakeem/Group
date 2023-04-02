@@ -1,0 +1,10 @@
+<!ELEMENT employees  ( employees*) >
+<!ELEMENT employees ( firstname+ familyname, division+) >
+<!ATTLIST employees id ID #REQUIRED
+           currManger IDER  #IMPLIED>
+<!ELEMENT firstname (#PCDATA)> 
+<!ELEMENT familyname(#PCDATA)>
+<!ELEMENT division EMPTY>
+<!ATTLIST division divName (HR | Sales | Marketing) "Sales"
+      startdata CDATA #REQUIRED>
+           

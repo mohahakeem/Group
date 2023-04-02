@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Page of Ms. Linda Otoo</title>
+    <link rel="icon" href="FAVIC0.png">
+    <!--<link rel="stylesheet" href="styles.css"> -->
+    <style>
+
+    /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    }
+    /* header styles */
+        header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+        /* Styles for the Navigation items */
+		nav {
+			background-color: #444;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+        }
+      
+    nav a {
+			float: left;
+			color:white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+    .faqs{
+      text-decoration: none;
+    }
+    
+		.content {
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			background-color: #f2f2f2;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid #ddd;
+			font-size: 16px;
+      font-weight: bold;
+		}
+		th {
+			background-color: #003366;
+			color: white;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.blockquote {
+			background-color: #fff;
+			border-left: 4px solid #003366;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+			quotes: "\201C""\201D""\2018""\2019";
+			font-style: italic;
+			font-size: 18px;
+		}
+		.blockquote:before {
+			content: open-quote;
+			font-size: 40px;
+			line-height: 0.1em;
+			margin-right: 10px;
+			vertical-align: -0.4em;
+		}
+		.blockquote footer {
+			color: #333;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			text-align: right;
+		}
+		.about {
+			padding: 20px;
+			background-color: #f2f2f2;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.about h2 {
+			margin-top: 0;
+			font-size: 28px;
+			color: #003366;
+		}
+		.about p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.courses {
+			padding: 20px;
+			background-color: #f2f2f2;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.courses h2 {
+			margin-top: 0;
+			font-size: 28
+    }
+
+  .container {
+  display: flex;
+  justify-content:stretch;
+}
+
+  
+  /* Style the resource section */
+  section.resources-section {
+  background-color: #f2f2f2;
+  padding: 20px 210px;
+  float: right;
+  }
+/*Styling the resource heading section */
+  .resources-heading {
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ /* Style the resource ul section */
+.resources-list {
+  list-style-type:circle;
+  padding: 0;
+  margin: 0;
+}
+ /* Style the resource li section */
+.resources-list li {
+  margin-bottom: 10px;
+
+}
+/* Style the resource a section */
+.resources-list a {
+  color:blue;
+  text-decoration:none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
+}
+/* Style the resource li section */
+.resources-list a:hover {
+  border-color: #f44336;
+}
+/*END of RESOURCES styling section */
+
+
+/* Styling the DISCUSSION section */
+section.discussion-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+section.discussion-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section.discussion-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+section.discussion-section .forum-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+section.discussion-section .forum-link:hover {
+  background-color: #3e8e41;
+}
+/*END of DISCUSSION styling section */
+
+
+
+  /* Styling the FAQ section */
+    .faq-section {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    /* Style the FAQ heading */
+    .faq-heading {
+      font-size: 2em;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    /* Style the FAQ list */
+    .faq-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 800px;
+      list-style: none;
+      padding: 0;
+    }
+
+    /* Style the FAQ question */
+    .faq-question {
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Style the FAQ answer */
+    .faq-answer {
+      margin-left: 0;
+      margin-bottom: 10px;
+      
+    }
+
+    /* Style the FAQ list on hover */
+    .faq-list:hover .faq-question {
+      color: #f44336;
+      transition: color 0.2s ease-in-out;
+    }
+
+    /* Style the FAQ list on hover */
+    .faq-list:hover .faq-answer {
+      color: #666;
+      transition: color 0.2s ease-in-out;
+    
+    /*END of FREQUENTLY ASKED QUESTIONS (FAQs) styling section */
+    }
+
+
+  /*Styling the VIDEO SECTION */ 
+    #video-section {
+    background-image: url(./Skylights.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+#video-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#video-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  
+}
+
+#video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*END of VIDEO SECTION styling section */
+}
+
+
+
+  /*Styling the FOOTER section */
+  footer {
+  background-color:#333;
+  color: aqua;
+  font-size: 12px;
+  padding: 0px 0px;
+  margin: 50px;
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+   color: wheat;
+    text-transform: capitalize;
+}
+
+#useful-links h4,#connect-with-us h4,#footer-text p {
+  margin-top: 0;
+  padding-left: 
+}
+
+#useful-links ul,#connect-with-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#useful-links li,#connect-with-us li {
+  margin: px 0;
+}
+
+#useful-links a,#connect-with-us a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+#useful-links a:hover, #connect-with-us li a:hover {
+  text-decoration: underline;
+  
+}
+
+
+#social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#social-icons a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#social-icons i {
+  margin-right: 10px;
+  display : flex;
+
+}
+
+#footer-text {
+  
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+/* rule will be applied when the maximum width of the screen is 768px or less.*/
+@media (max-width: 768px) {
+  #footer-container {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+   
+
+
+  #useful-links, #connect-with-us {
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+  }
+  /*END of FOOTER styling section */
+}
+
+
+
+    </style>
+    <link rel="stylesheet"   type="text/css"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+  </head>
+  <body>
+    <header>
+		<img src="./ucc_logo_new.png" alt="UCC logo">
+		<h1>Welcome to the Teaching Page of Ms. Linda Otoo!</h1>
+	</header>
+  <nav>
+		<a href="#course"><strong>Courses</strong></a>
+    <a href="#material"><strong>Course Materials</strong></a>
+    <a href="#test"><strong>Testimonials</strong></a>
+    <a href="#discuss"><strong>Discussion Forum</strong></a>
+    <a href="#resource"><strong>Additonal Resources</strong></a>
+    <a href="#meet"><strong> About  Ms. Otto</strong></a>
+    <a href="#faqs"><abbr title="Frequently Asked Questions" class="faqs"><strong>FAQs</strong></abbr></a>
+    
+	</nav>
+
+    <p>
+        Here you will find information about the courses taught by Ms. Linda Otoo, including syllabi and course materials. Additionally, there is a hyperlinked image that will lead you to a video of Ms. Linda Otoo discussing her teaching philosophy and approach to education.
+    </p>
+    <table id="material">
+      <tr>
+        <th>Course Number</th>
+        <th>Course Title</th>
+        <th>Syllabus</th>
+        <th>Course Materials</th>
+        <th>Recommended Readings</th>
+      </tr>
+      <tr>
+        <td>INF217</td>
+        <td>Programming & Problem Analysis</td>
+        <td><a href="link-to-syllabus">Download Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+        <td><a href="link-to-recommended-readings">Recommended Readings</a></td>
+      </tr>
+      <tr>
+        <td>INF301</td>
+        <td>Algorithms</td>
+        <td><a href="link-to-syllabus">Download Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+        <td><a href="link-to-recommended-readings">Recommended Readings</a></td>
+      </tr>
+      <tr>
+        <td>INF312</td>
+        <td>Data Structures</td>
+        <td><a href="link-to-syllabus">Download Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+        <td><a href="link-to-recommended-readings">Recommended Readings</a></td>
+      </tr>
+    </table>
+    <h2 id="test">Testimonials</h2>
+    <blockquote>
+      <p>"Ms. Linda Otoo's Programming & Problem Analysis (C++) course was one of the best classes I've taken at this university. Her passion for technology is infectious, and she really helped me develop my coding skills"</p>
+      <footer>— Smith, INF217</footer>
+    </blockquote>
+    <blockquote>
+      <p>"I had always found Algorithms intimidating, but Ms. Linda Otoo's course made the plays come alive for me. She has a real talent for making difficult material accessible."</p>
+      <footer>— Florence Oforiwaa, INF301</footer>
+    </blockquote>
+    <h2 id="meet">About Ms. Linda Otoo</h2>
+    <p>Ms. Linda Otoo is a passionate and experienced educator who has been teaching for over 10 years. She holds a PhD in COmputer Science from the University of Cape Coast, where she conducted research on student engagement and motivation in the classroom.</p>
+    <p>Ms. Otoo's teaching philosophy emphasizes active learning, critical thinking, and collaboration. She believes that students learn best when they are actively engaged in the learning process and when they are given opportunities to apply what they have learned in real-world contexts.</p>
+    <p>Ms. Otoo has received numerous awards for her teaching, including the Outstanding Teacher Award from the National Association for Gifted Children and the Distinguished Teaching Award from the University of Cape Coast.</p>
+    <h2 id="course">Courses</h2>
+    <table border="1">
+      <tr>
+        <th>Course</th>
+        <th>Syllabus</th>
+        <th>Course Materials</th>
+      </tr>
+      <tr>
+        <td>Programming & Problem Analysis</td>
+        <td><a href="link-to-syllabus">Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+      </tr>
+      <tr>
+        <td>Algorithms</td>
+        <td><a href="link-to-syllabus">Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+      </tr>
+      <tr>
+        <td>Data Structures</td>
+        <td><a href="link-to-syllabus">Syllabus</a></td>
+        <td><a href="link-to-course-materials">Course Materials</a></td>
+      </tr>
+    </table>
+    <div class="container">
+      <section class="discussion-section">
+        <h2 id="discuss">Discussion Forum</h2>
+        <p>Join the discussion and connect with your peers and Ms. Linda Otoo <br> outside of class time in our online forum:</p>
+        <a class="forum-link" href="link-to-forum">Visit the Discussion Forum</a>
+      </section>
+
+      <section class="resources-section">
+        <h2 id="resource" class="resources-heading">Additional Resources</h2>
+        <ul class="resources-list">
+          <li><a href="link-to-writing-guide">Online Writing Guide</a></li>
+          <li><a href="link-to-research-databases">Research Databases</a></li>
+          <li><a href="link-to-academic-journals">Academic Journals</a></li>
+        </ul>
+      </section>
+    
+      
+    </div>
+    
+      
+
+    <section class="faq-section">
+      <h2 id="faqs" class="faq-heading">Frequently Asked Questions</h2>
+      <dl class="faq-list">
+        <dt class="faq-question">What is the grading policy for Ms. Linda Otoo's courses?</dt>
+        <dd class="faq-answer">Grading policies vary by course, but will be clearly outlined in the syllabus.</dd>
+        <dt class="faq-question">How can I contact Ms. Linda Otoo outside of class?</dt>
+        <dd class="faq-answer">Ms. Linda Otoo is available during office hours and by email. Her contact information is included in the syllabus for each course.</dd>
+        <dt class="faq-question">Is there a participation component to Ms. Linda Otoo's courses?</dt>
+        <dd class="faq-answer">Yes, participation is an important part of the learning experience in Ms. Linda Otoo's courses. Details will be provided in the syllabus.</dd>
+      </dl>
+    </section>
+    <section id="video-section">
+      <h2 id="video-heading">Video of Ms. Linda Otoo </h2>
+      <p id="video-description">
+        Watch this video of  Ms Otoo at the workshop improving on her teaching skills:
+      </p>
+      <div>
+        <video   controls src="VID-20230319-WA0021.mp4"></video>
+      </div>
+    </section>
+    
+
+    <footer>
+      <div id="footer-container">
+        <div id="useful-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div id="connect-with-us">
+          <h4>Connect With Us</h4>
+          <ul id="social-icons">
+            <li><a  href="#"><i class="fab  fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class=" fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li> 
+          </ul>
+        </div>
+        <div id="footer-text">
+          <p>&copy; 2023 Teaching Page. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    
+    
+      
+  </body>
+</html>

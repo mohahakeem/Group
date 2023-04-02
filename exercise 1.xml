@@ -1,0 +1,18 @@
+<?xml version "1.0"?>
+<!DOCTYPE employees  SYSTEM "exercise1.dtd"> 
+
+
+ <employees>
+ <employees id="E001">
+ currManger="M001">
+
+ 
+ <firstname> Nathaniel </firstname>
+ <firstname> John </firstname>
+ <firstname> Doe  </firstname>
+
+ <familyname> Duah </familyname>
+
+ <division> Kweku </division>
+
+ </employees>

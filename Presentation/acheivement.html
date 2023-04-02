@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acheivement</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <style>
+  
+    /* Global styles */
+   body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color:#333 ;
+      }
+    /* header styles */
+        header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+        /* Styles for the Navigation items */
+		nav {
+			background-color: #444;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+        }
+      
+    nav a {
+			float: left;
+			color:white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+    .faqs{
+      text-decoration: none;
+    }
+    
+		.content {
+			padding: 20px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			background-color: #f2f2f2;
+		}
+	
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		.blockquote {
+			background-color: #fff;
+			border-left: 4px solid #003366;
+			margin: 1.5em 10px;
+			padding: 0.5em 10px;
+			quotes: "\201C""\201D""\2018""\2019";
+			font-style: italic;
+			font-size: 18px;
+		}
+		.blockquote:before {
+			content: open-quote;
+			font-size: 40px;
+			line-height: 0.1em;
+			margin-right: 10px;
+			vertical-align: -0.4em;
+		}
+		.blockquote footer {
+			color: #333;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			text-align: right;
+		}
+		.about {
+			padding: 20px;
+			background-color: #f2f2f2;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.about h2 {
+			margin-top: 0;
+			font-size: 28px;
+			color: #003366;
+		}
+		.about p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.courses {
+			padding: 20px;
+			background-color: #f2f2f2;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.courses h2 {
+			margin-top: 0;
+			font-size: 28
+    }
+
+  .container {
+  display: flex;
+  justify-content:stretch;
+}
+
+  
+  /* Style the resource section */
+  section.resources-section {
+  background-color: #f2f2f2;
+  padding: 20px 210px;
+  float: right;
+  }
+/*Styling the resource heading section */
+  .resources-heading {
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ /* Style the resource ul section */
+.resources-list {
+  list-style-type:circle;
+  padding: 0;
+  margin: 0;
+}
+ /* Style the resource li section */
+.resources-list li {
+  margin-bottom: 10px;
+
+}
+/* Style the resource a section */
+.resources-list a {
+  color:blue;
+  text-decoration:none;
+  border-bottom: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
+}
+/* Style the resource li section */
+.resources-list a:hover {
+  border-color: #f44336;
+}
+/*END of RESOURCES styling section */
+
+
+/* Styling the DISCUSSION section */
+section.discussion-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+section.discussion-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section.discussion-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+section.discussion-section .forum-link {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+section.discussion-section .forum-link:hover {
+  background-color: #3e8e41;
+}
+/*END of DISCUSSION styling section */
+
+
+
+
+  /*Styling the FOOTER section */
+  footer {
+  background-color:darkslategrey;
+  color: aqua;
+  font-size: 12px;
+  padding:0px 0px;
+  margin: 15px;
+  
+  
+}
+
+#footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 15px;
+  font-size: 18px;
+  color: wheat;
+  text-transform: capitalize;
+  height: 200px;
+    
+    
+}
+
+#useful-links h4,#connect-with-us h4,#footer-text p {
+  margin-top: 0;
+  padding-left: 
+}
+
+#useful-links ul,#connect-with-us ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#useful-links li,#connect-with-us li {
+  margin: px 0;
+}
+
+#useful-links a,#connect-with-us a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+#useful-links a:hover, #connect-with-us li a:hover {
+  text-decoration: underline;
+  
+}
+
+
+#social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#social-icons a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#social-icons i {
+  margin-right: 10px;
+  display : flex;
+
+}
+
+#footer-text {
+  
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+/* rule will be applied when the maximum width of the screen is 768px or less.*/
+@media (max-width: 768px) {
+  #footer-container {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+   
+
+
+  #useful-links, #connect-with-us {
+    width: 100%;
+    margin-bottom: 20px;
+    
+
+  }
+  /*END of FOOTER styling section */
+}
+
+
+
+    body {
+        background-color:#333;
+        color: #fff;
+    }
+    h1{
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: oblique;
+      text-orientation: sideways;
+      font-size: xx-large;
+      font-weight: bolder;
+
+    }
+
+    section{
+      width: 100%;
+      height: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+    }
+    
+    /* Add some basic styling for the table */
+    #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers tr {
+  height: 70px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+#customers tr:nth-child(even){
+  background-color: #f2f2f2;
+  color:#333
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:mediumturquoise;
+  color: white;
+}
+
+#section 3 {
+    width:350px;
+    float:below;
+    padding 10px;
+}    
+
+  </style>
+</head>
+<body>
+  <header>
+		<img src="./ucc_logo_new.png" alt="UCC logo">
+		<h1>RESEARCH, ACHIEVEMENTS AND PROJECTS</h1>
+	</header>
+  <nav>
+		<a href="#archeivement"><strong>ACHIEVEMENTS</strong></a>
+    <a href="#research"><strong>RESEARCH</strong></a>
+    <a href="#project"><strong>PROJECTS</strong></a>
+    <a href="#awards"><strong>AWARDS</strong></a>
+    <a href="#research staff"><strong>RESEARCH STAFFS</strong></a>
+	</nav>
+  <div id="section 2">
+    <img src="photo_2023-04-01_15-11-45.jpg" height="700" width="1200px"/>
+</div>
+  
+<p>We are thrilled to have you visit our platform, where we showcase groundbreaking research and achievements in various fields.</p>
+<p>Our goal is to inspire and inform our viewers with innovative and thought-provoking content. Our team of experts and researchers work tirelessly to bring you the latest news, discoveries, and developments in fields ranging from science and technology to arts and humanities.</p>
+<p>We believe that knowledge and information are essential tools for growth and development, and we are committed to providing you with valuable insights and perspectives that can broaden your understanding of the world around you.</p>
+<p>We hope you find our website informative, engaging, and thought-provoking, and we invite you to explore our content and share your thoughts with us. Thank you for visiting Jane Doe Research and Achievement Webpage, and we look forward to your continued support.</p>
+
+  <h2 align="center" id="archeivement" class="archeivement-heading" ><strong>ARCHEIVEMENTS</strong></h2>
+  <p align="center"> <img src="photo_2023-04-01_15-11-55.jpg" height="100%" width="700px"/></p>
+  <p>Dear all,</p>
+
+  <p>We are thrilled to announce the latest achievement of Mrs. Linda Otoo, one of the most talented and dedicated researchers in our field.</p>
+
+  <p>Linda's tireless efforts and dedication have resulted in groundbreaking discoveries that have revolutionized our understanding of the complex interplay between programming, Networking, and Multimedia. Her work has earned her numerous awards, accolades, and recognition from her peers and colleagues in the Computing community.</p>
+
+  <p>With her latest publication, Linda has taken her research to the next level, uncovering key insights that could lead to new breakthroughs in the field of C++ Programming. Her work not only advances our understanding of how functions are regulated but also sheds light on how environmental factors can impact our C++ program.</p>
+
+  <p>We are proud to have Linda as a member of our Teaching Staff, and we are grateful for her continued contributions to our collective pursuit of knowledge and understanding. Her work serves as an inspiration to us all, and we look forward to seeing what new discoveries she will uncover in the future.</p>
+
+  <p>Congratulations, Mrs. Linda, on this incredible achievement. Your dedication, passion, and hard work are truly remarkable and worthy of recognition.</p>
+
+  <p>Sincerely,</p>
+  <p><strong>Below are Madam Linda Otoo  listed archeivement</strong></p>
+  <ul>
+    <li>Distinguished Technician at 4th UCC Staff Reward and Recognition, 2019</li>
+    <li>Department Lecturer of The Year</li>
+    <li>SingleHandedly created, developed, and implemented an Online Students complaints Systems for Graduate Students</li>
+        <li>Implemented a series of activities based learning programs, which increased student intrest in regular lessons. </li>
+        <li>Successfully helped students in college admissions through appropriate and well-placed career counseling.</li>
+        <li>Created and implemented a grading system coined “Evaluate Minds” which focused on students’ ability to perform without the stress of impending exams, resulting in a 40% increase in grades</li>
+      </ul>
+      
+
+  <h2 align="center" id="research" class="research-heading" ><strong>RESERCH</strong></h2>
+  <div id="section 3">
+    <video width="1200", height="700" controls>
+        <source src="VID-20230319-WA0025.mp4"/>
+    </video>
+    <p>This Section is about Mrs Linda Otoo research and Project Work.The above Video is showing Madam Linda Otoo embacking on her research and Projects</p>
+</div>
+<p>The List Below is about Madam Jane Doe Recent and Past Research works</p>
+  <ul>
+    <li>
+      <a><strong>Applying Machine Learning Algorithms to Improve Cybersecurity</strong></a>
+      <p> This paper could explore how machine learning can be used to detect and prevent cyber attacks, and how the accuracy of these algorithms can be improved over time.</p>
+      <p><strong><a href="#">Research Paper</a></strong></p>
+    </li>
+    <li>
+      <p><strong><a>Developing a Framework for Efficient Data Management in Cloud Computing</a></strong></p>
+      <p> With the growing popularity of cloud computing, there is a need for more efficient ways to manage the large amounts of data that are being stored in the cloud. </p>
+        <p>This paper could propose a new framework or system for managing cloud data that is more efficient and cost-effective.</p>
+        <p><strong><a href="#">Research Paper</a></strong></p>
+    </li>
+    <li>
+      <p><strong><a>The Use of Virtual Reality in Education</a></strong></p>
+      <p> Virtual reality has the potential to revolutionize the way we teach and learn, and this paper could explore how this technology can be used in the classroom to improve learning outcomes and engage students.</p>
+      <p><strong><a href="#">Research Paper</a></strong></p>
+    </li>
+    <li>
+      <p><strong><a>Designing a More Accessible User Interface for Individuals with Disabilities</a></strong></p>
+      <p>With the increasing importance of technology in our daily lives, it is important to ensure that everyone is able to use it, including individuals with disabilities. This paper could focus on designing a more accessible user interface for individuals with a range of disabilities, such as visual or hearing impairments.</p>
+       
+        <p><strong><a href="#">Research Paper</a></strong></p>
+    </li>
+    <li>
+      <p><strong><a>The Ethics of Artificial Intelligence</a></strong></p>
+      <p>As artificial intelligence becomes more prevalent in our society, it is important to consider the ethical implications of its use. This paper could explore the ethical considerations surrounding AI, such as privacy concerns, bias in algorithms, and the impact on employment.</p>
+       
+        <p><strong><a href="#">Research Paper</a></strong></p>
+    </li>
+  </ul>
+  
+  <h2 align="center" id="project" class="project-heading"><strong>PROJECTS</strong></h2>
+  <table id="customers">
+    <thead>
+      <tr>
+        <th>Project Title</th>
+        <th>Publication</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Development of a Web-Based Learning Management System</td>
+        <td>Mrs. Linda embarked  on developing an online platform to manage and deliver course content, assessments, and communication between students and instructors. This project could involve designing and programming a web application with features like course enrollment, content delivery, and tracking of student performance.<a href="#">Read More</a></td>
+      </tr>
+      <tr>
+        <td>Creation of a Mobile Application</td>
+        <td>Another project Mrs. Linda Otoo undertook could be developing a mobile application related to Information Technology that could help students learn and practice coding, networking, cybersecurity, or any other IT skill. The app could include interactive tutorials, practice exercises, and challenges to engage students and help them enhance their IT skills.<a href="#">Read more</a></td>
+      </tr>
+      <tr>
+        <td>Research on Emerging Technologies:</td>
+        <td>As a technology lecturer, Mrs.Linda Otoo conduct research on emerging technologies in the field of IT, such as artificial intelligence, machine learning, big data analytics, or blockchain, and explore how these technologies can be applied in various industries. She may collaborate with other researchers and publish her findings in academic journals, conferences, or workshops, thereby contributing to the advancement of the field.<a href="#">Read More</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h1 align="center"id="awards" class="awards-heading"><strong>AWARDS</strong></h1>
+  <div id="section 2">
+   <p align="center"><img  src="photo_2023-03-29_11-09-57.jpg" height="0" width="400px"/></p>
+</div>
+<div class="container">
+  <blockquote>
+    <p>Good evening, ladies and gentlemen,</p>
+
+    <p>I am deeply honored and humbled to be standing before you tonight, as the recipient of this prestigious award. I would like to express my sincerest gratitude to the selection committee, my colleagues, and all those who have supported me on this journey.</p>
+
+    <p>Receiving this award is a momentous occasion for me, not only because it recognizes the hard work and dedication that I have put into my career but also because it inspires me to continue pushing the boundaries of what is possible.</p>
+
+    <p>Throughout my career, I have been fortunate to work alongside some of the most brilliant minds in the industry, who have challenged me to think critically, innovate and push beyond my comfort zone.</p>
+
+    <p>I have also had the pleasure of working with talented and passionate teams who have helped me bring my ideas to life, and who have inspired me with their unwavering commitment to excellence.</p>
+
+    <p>Most importantly, I owe this award to my family, whose unwavering support and encouragement have been a constant source of inspiration for me. Their love and support have been the foundation upon which I have built my career, and for that, I am forever grateful.</p>
+
+    <p>In conclusion, I would like to say that this award is not just for me, but for all those who have believed in me, supported me, and helped me along the way. I promise to continue pushing myself to achieve new heights, and to use this recognition to make a positive impact in the world.</p>
+
+    <p>Thank you again for this incredible honor.</p>
+    <p>~MRS. LINDA OTOO</p>
+
+ 
+      <h2 align="center" id="research staff" class="research staff-heading"><strong>Research Staff</strong></h2>
+      <tr>
+    <td align="center" valign="top" bgcolor="#ffffff" style="background-color:#ffffff;"><table width="700" border="0" cellspacing="0" cellpadding="0" align="center" style="width:700px;" class="em_wrapper">
+        <tr>
+          <td width="18" style="width:18px;" class="em_side10">&nbsp;</td>
+          <td align="center" valign="top"><table width="668" border="0" cellspacing="0" cellpadding="0" align="center" style="width:668px;" class="em_wrapper">
+              <tr>
+                <td align="center" valign="top"><table width="328" border="0" cellspacing="0" cellpadding="0" align="left" style="width:328px;" class="em_wrapper">
+                    <tr>
+                      <td align="center" valign="top"><table width="328" border="0" cellspacing="0" cellpadding="0" align="center" style="width:328px;" class="em_w300">
+                          <tr>
+                            <td align="center" valign="top"><table width="157" border="0" cellspacing="0" cellpadding="0" align="left" style="width:157px;" class="em_wrapper">
+                                <tr>
+                                  <td align="center" valign="top"  style="border: solid 2px #9e9f9f;  display:block; "><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"  class="em_wrapper" >
+                                      <tr><td align="center" valign="top" bgcolor="#9e9f9f" style="background-color:#9e9f9f; color:#fff;">Presenter 1<table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper"></table></td></tr>
+                                      <tr>
+                                        <td height="189" align="center" valign="bottom" style="height:189px;"><img src="download.jpg" width="145" alt="" height="163" style="display:block; font-family:Arial, sans-serif; font-size:20px; line-height:30px; color:#000000; max-width:145px; height:163px;" class="em_g_img"  border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" bgcolor="#4d4d4d" style="background-color:#4d4d4d; border-bottom-left-radius:5px; border-bottom-right-radius:5px;"><table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper">
+                                      <tr>
+                                        <td align="center" valign="top" style="padding:0px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                            <tr>
+                                              <td class="em_white" align="center" valign="top"  style="font-family: 'Roboto', Arial, sans-serif; font-size:14px; line-height:17px; color:#ffffff;padding:8px 0px;  "><span style="font-weight:bold;">MR.MARK ZUCKERBERG</span> <br />
+                                                CEO FACEBOOK</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="padding-bottom:11px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                  <tr>
+                                                    <td align="center" valign="top" bgcolor="#007f3d" style="border-radius:5px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                        <tr>
+                                                          <td class="em_white" align="center" valign="middle" height="56" style="height:56px; font-family: 'Roboto', Arial, sans-serif; font-size:13px; color:#ffffff; font-weight:bold;  "><a href="#" target="_blank" style="text-decoration:none; color:#ffffff; display:block; line-height:16px; ">View Participation<br />
+                                                            Options</a></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                            <td width="12" style="width:12px;" >&nbsp;</td>
+                            <td align="center" valign="top"><table width="157" border="0" cellspacing="0" cellpadding="0" align="left" style="width:157px;" class="em_wrapper">
+                                <tr>
+                                  <td align="center" valign="top" style="border: solid 2px #9e9f9f;  display:block; "><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"  class="em_wrapper" >
+                                      <tr><td align="center" valign="top" bgcolor="#9e9f9f" style="background-color:#9e9f9f; color:#fff;">Presenter 2<table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper"></table></td></tr>
+                                      <tr>
+                                        <td height="189" align="center" valign="bottom" style="height:189px;"><img src="john.JPG" width="145" alt="" height="159" style="display:block; font-family:Arial, sans-serif; font-size:20px; line-height:30px; color:#000000; max-width:145px; height:159px;" class="em_g_img"  border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" bgcolor="#4d4d4d" style="background-color:#4d4d4d; border-bottom-left-radius:5px; border-bottom-right-radius:5px;"><table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper">
+                                      <tr>
+                                        <td align="center" valign="top" style="padding:0px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                            <tr>
+                                              <td class="em_white" align="center" valign="top"  style="font-family: 'Roboto', Arial, sans-serif; font-size:14px; line-height:17px; color:#ffffff;padding:8px 0px;  "><span style="font-weight:bold;">MR. KODDY SMITH</span> <br />
+                                                HAVARD UNIVERSITY</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="padding-bottom:11px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                  <tr>
+                                                    <td align="center" valign="top" bgcolor="#007f3d" style="border-radius:5px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                        <tr>
+                                                          <td class="em_white" align="center" valign="middle" height="56" style="height:56px; font-family: 'Roboto', Arial, sans-serif; font-size:13px; color:#ffffff; font-weight:bold;  "><a href="#" target="_blank" style="text-decoration:none; color:#ffffff; display:block; line-height:16px; ">View Participation<br />
+                                                            Options</a></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>
+                  <table width="328" border="0" cellspacing="0" cellpadding="0" align="right" style="width:328px;" class="em_wrapper">
+                    <tr>
+                      <td align="center" valign="top" class="em_ptop"><table width="328" border="0" cellspacing="0" cellpadding="0" align="center" style="width:328px;" class="em_w300">
+                          <tr>
+                            <td align="center" valign="top"><table width="157" border="0" cellspacing="0" cellpadding="0" align="left" style="width:157px;" class="em_wrapper">
+                                <tr>
+                                  <td align="center" valign="top" style="border: solid 2px #9e9f9f; "><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"  class="em_wrapper" >
+                                      <tr><td align="center" valign="top" bgcolor="#9e9f9f" style="background-color:#9e9f9f; color:#fff;">Presenter 3<table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper"></table></td></tr>
+                                      <tr>
+                                        <td height="189" align="center" valign="bottom" style="height:189px;"><img src="download (1).jpg" width="145" alt="" height="153"  style="display:block; font-family:Arial, sans-serif; font-size:20px; line-height:30px; color:#000000; max-width:145px; height:153px;" class="em_g_img"  border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" bgcolor="#4d4d4d" style="background-color:#4d4d4d; border-bottom-left-radius:5px; border-bottom-right-radius:5px;"><table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper">
+                                      <tr>
+                                        <td align="center" valign="top" style="padding:0px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                            <tr>
+                                              <td class="em_white" align="center" valign="top"  style="font-family: 'Roboto', Arial, sans-serif; font-size:14px; line-height:17px; color:#ffffff;padding:8px 0px;  "><span style="font-weight:bold;">YAW MENSAH</span> <br />
+                                                YALE UNIVERSITY</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="padding-bottom:11px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                  <tr>
+                                                    <td align="center" valign="top" bgcolor="#007f3d" style="border-radius:5px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                        <tr>
+                                                          <td class="em_white" align="center" valign="middle" height="56" style="height:56px; font-family: 'Roboto', Arial, sans-serif; font-size:13px; color:#ffffff; font-weight:bold;  "><a href="#" target="_blank" style="text-decoration:none; color:#ffffff; display:block; line-height:16px; ">View Participation<br />
+                                                            Options</a></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                            <td width="12" style="width:12px;" >&nbsp;</td>
+                            <td align="center" valign="top"><table width="157" border="0" cellspacing="0" cellpadding="0" align="left" style="width:157px;" class="em_wrapper">
+                                <tr>
+                                  <td align="center" valign="top" style="border: solid 2px #9e9f9f; "><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"  class="em_wrapper" >
+                                      <tr><td align="center" valign="top" bgcolor="#4d4d4d" style="background-color:#9e9f9f; color:#fff;">Presenter 4<table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper"></table></td></tr>
+                                      <tr>
+                                        <td height="189" align="center" valign="bottom" style="height:189px;"><img src="OIP.jpg" width="145" alt="" height="157" style="display:block; font-family:Arial, sans-serif; font-size:20px; line-height:30px; color:#000000; max-width:145px; height:157px;" class="em_g_img"  border="0" /></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" bgcolor="#4d4d4d" style="background-color:#4d4d4d; border-bottom-left-radius:5px; border-bottom-right-radius:5px;"><table width="157" border="0" cellspacing="0" cellpadding="0" align="center" style="width:157px;" class="em_wrapper">
+                                      <tr>
+                                        <td align="center" valign="top" style="padding:0px 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                            <tr>
+                                              <td class="em_white" align="center" valign="top"  style="font-family: 'Roboto', Arial, sans-serif; font-size:14px; line-height:17px; color:#ffffff;padding:8px 0px;  "><span style="font-weight:bold;">ELON MASK</span> <br />
+                                                CEO TESLA</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="padding-bottom:11px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                  <tr>
+                                                    <td align="center" valign="top" bgcolor="#007f3d" style="border-radius:5px;"><table width="125" border="0" cellspacing="0" cellpadding="0" align="center" style="width:125px;">
+                                                        <tr>
+                                                          <td class="em_white" align="center" valign="middle" height="56" style="height:56px; font-family: 'Roboto', Arial, sans-serif; font-size:13px; color:#ffffff; font-weight:bold;  "><a href="#" target="_blank" style="text-decoration:none; color:#ffffff; display:block; line-height:16px; ">View Participation<br />
+                                                            Options</a></td>
+                                                        </tr>
+                                                      </table></td>
+                                                  </tr>
+                                                </table></td>
+                                            </tr>
+                                          </table></td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+          <td width="14" style="width:14px;" class="em_side10">&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+    <footer>
+      <div id="footer-container">
+        <div id="useful-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+        <div id="connect-with-us">
+          <h4>Connect With Us</h4>
+          <ul id="social-icons">
+            <li><a href="#"><i class="facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="instagram"></i>Instagram</a></li>
+          </ul>
+        </div>
+        <div id="footer-text">
+          <p>&copy; 2023 Research Page. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </body>
+    </html>
+    
